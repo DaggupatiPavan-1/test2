@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test2
+  description: Python app that displays time - named test2
+  annotations:
+    argocd/app-name: test2
+    github.com/project-slug: DaggupatiPavan-1/test2
+    backstage.io/kubernetes-namespace: dev
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/name=test2
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  owner: development
+  lifecycle: experimental
